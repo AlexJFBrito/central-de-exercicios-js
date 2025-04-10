@@ -30,7 +30,7 @@ function exercicio02() {
 
     } else {
 
-        console.log("O numero inserido é IMPAR")
+        console.log("o numero inserido é IMPAR")
     }
 
 }
