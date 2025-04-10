@@ -186,5 +186,3 @@ if (compra >= 100)
  
 
 
- exercicio09 ();
-
