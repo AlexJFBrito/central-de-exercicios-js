@@ -5,35 +5,45 @@ function exercicio01() {
 
     if (numero > 0) {
 
-        console.log("Positivo.");
+        alert("Positivo.");
 
     } else {
 
         if (numero < 0) {
 
-            console.log("Negativo.");
+            alert("Negativo.");
 
         } else {
-            console.log("È zero.");
+            alert("È zero.");
 
         }
 
     }
 
+    gerarLog("Exercicio 01 executado ás " +  new Date().toLocaleString());
+
 }
+
+
+
 function exercicio02() {
     let numero = prompt("Digite um numero");
 
     if (numero % 2 == 0) {
 
-        console.log("O numero inserido é PAR");
+        alert("O numero inserido é PAR");
 
     } else {
 
-        console.log("o numero inserido é IMPAR")
+        alert("o numero inserido é IMPAR")
     }
+    gerarLog("Exercicio 02 executado ás " +  new Date().toLocaleString());
 
 }
+
+
+
+
 function exercicio03() {
 
 
@@ -158,30 +168,19 @@ function exercicio08() {
 
 
   
-    alert("resultado:" + maior);
+    alert("O maior número inserido é:" + maior);
 
 }
 
-
-function exercicio09 () {
-
-let compra = prompt ("Insira o valor da compra:")
-
-let resultado;
-
-if (compra >= 100)
-
-    desconto = compra * 0,10
-
-    resultado = compra + desconto {
+function gerarLog(textoDoLog) {
 
 
-    } else if (compra <100)
-
-    
+    let logsContainer = document.querySelector(".logs-container");
+    let paragraph = document.createElement("p");
+    paragraph.innerHTML = textoDoLog;
+    logsContainer.appendChild(paragraph);
 }
 
- alert ("Valor da compra : " + resultado);
 
  
 
